@@ -7,17 +7,17 @@
   
   <Resource id="ora" type="javax.sql.DataSource">
     jdbcDriver = oracle.jdbc.driver.OracleDriver
-    jdbcUrl = jdbc:oracle:thin:@localhost:1521:primary
+    jdbcUrl = jdbc:oracle:thin:@localhost:1521/orcl
     jtaManaged = true
-    password = password 
+    password = oracle
     userName = system
   </Resource>
   
    <Resource id="oraUnmanaged" type="javax.sql.DataSource">
     jdbcDriver = oracle.jdbc.driver.OracleDriver
-    jdbcUrl = jdbc:oracle:thin:@localhost:1521:primary
+    jdbcUrl = jdbc:oracle:thin:@localhost:1521/orcl
     jtaManaged = false
-    password = password 
+    password = oracle
     userName = system
   </Resource> 
 </tomee>

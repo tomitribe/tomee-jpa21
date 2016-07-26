@@ -25,9 +25,9 @@ public class HelloWorldTest {
 		p.setProperty(Context.INITIAL_CONTEXT_FACTORY, LocalInitialContextFactory.class.getName());
 		p.setProperty("ora", "new://Resource?type=javax.sql.DataSource");
 		p.setProperty("ora.jdbcDriver", "oracle.jdbc.driver.OracleDriver");
-		p.setProperty("ora.jdbcUrl", "jdbc:oracle:thin:@localhost:1521:primary");
+		p.setProperty("ora.jdbcUrl", "jdbc:oracle:thin:@localhost:1521/orcl");
 		p.setProperty("ora.userName", "system");
-		p.setProperty("ora.password", "password");
+		p.setProperty("ora.password", "oracle");
 		
 		container = EJBContainer.createEJBContainer(p);
 		container.getContext().bind("inject", this);
